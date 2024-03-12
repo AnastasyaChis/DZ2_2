@@ -16,7 +16,7 @@ public class Main {
         int bonus = 0;
         int totalAmount = 0;
         if (deposit > 1000) {
-            int hundred = (int) Math.floor(deposit / 100);
+            int hundred = deposit / 100;
             bonus = hundred * 1;
             totalAmount = initAmount + deposit + bonus;
             System.out.println("Итоговая сумма на счета абонента:" + totalAmount + "рублей");
